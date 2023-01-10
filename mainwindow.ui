@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>249</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox_operations">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>20</y>
+      <width>221</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Действия</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>231</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QRadioButton" name="radioButton_addition">
+          <property name="text">
+           <string>Сложение</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_substraction">
+          <property name="text">
+           <string>Вычитание</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_multiplication">
+          <property name="text">
+           <string>Умножение</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_division">
+          <property name="text">
+           <string>Деление</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_sqrt">
+          <property name="text">
+           <string>Корень</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="radioButton_sin">
+          <property name="text">
+           <string>sin()</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_cos">
+          <property name="text">
+           <string>cos()</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_arcsin">
+          <property name="text">
+           <string>arcsin()</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButton_arccos">
+          <property name="text">
+           <string>arccos()</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QPushButton" name="pushButton_sum">
+       <property name="text">
+        <string>Сумма</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_clear">
+       <property name="text">
+        <string>Очистсть</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>171</width>
+      <height>96</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_op1">
+           <property name="text">
+            <string>Слагаемое 1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_op1"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_op2">
+           <property name="text">
+            <string>Слагаемое 2</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_op2"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <item>
+      <widget class="QLabel" name="label_answer">
+       <property name="text">
+        <string>Ответ</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_error">
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>231</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>231</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="128">
+             <red>180</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>231</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>231</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="128">
+             <red>180</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="127">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="127">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="ButtonText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="127">
+             <red>255</red>
+             <green>255</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="128">
+             <red>231</red>
+             <green>231</green>
+             <blue>231</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="text">
+        <string>Ошибка</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
